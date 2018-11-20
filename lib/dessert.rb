@@ -4,6 +4,9 @@ class Dessert
   end
   def healthy?
     # your code here
+    if @calories < 200
+      return true
+    end
   end
   def delicious?
     # your code here
@@ -13,5 +16,10 @@ end
 class JellyBean < Dessert
   def initialize(flavor)
     # your code here
+  end
+  def delicious?
+    if @flavor == licorice
+      return false
+    end
   end
 end
